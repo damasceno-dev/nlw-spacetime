@@ -1,6 +1,6 @@
 import { randomUUID } from 'crypto'
 import { FastifyInstance } from 'fastify'
-import { createWriteStream, write } from 'fs'
+import { createWriteStream } from 'fs'
 import { extname, resolve } from 'path'
 import { pipeline } from 'stream'
 import { promisify } from 'util'

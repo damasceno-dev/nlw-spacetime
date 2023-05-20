@@ -41,7 +41,6 @@ export default function App() {
   }
 
   useEffect(() => {
-    console.log('oi')
     // console.log(
     //   makeRedirectUri({
     //     scheme: 'nlwspacetime',

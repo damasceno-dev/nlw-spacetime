@@ -40,7 +40,7 @@ export default function Layout() {
     <ImageBackground
       source={blurBg}
       imageStyle={{ position: 'absolute', left: '-100%' }}
-      className="relative flex-1 bg-gray-900 px-8 py-10"
+      className="relative flex-1 bg-gray-900"
     >
       <StyledStripes className="absolute left-2" />
       <StatusBar style="light" translucent />
@@ -49,14 +49,15 @@ export default function Layout() {
         screenOptions={{
           headerShown: false,
           contentStyle: { backgroundColor: 'transparent' },
+          animation: 'fade',
         }}
       >
         <Stack.Screen
           name="index"
           redirect={isUserAuthenticated}
         ></Stack.Screen>
-        <Stack.Screen name="new"></Stack.Screen>
         <Stack.Screen name="memories"></Stack.Screen>
+        <Stack.Screen name="new"></Stack.Screen>
       </Stack>
     </ImageBackground>
   )
